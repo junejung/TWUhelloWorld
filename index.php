@@ -7,14 +7,14 @@
 echo "Hello World<br><br>";
 
 
-$devNames = array("Aubrey", "June", "PamO");
+// $devNames = array("Aubrey", "June", "PamO");
 
-for ($i=0; $i<=count($devNames); $i++)
-  {
-  echo $devNames[i] . " is on this project.<br>";
-  }
+// for ($i=0; $i<=count($devNames); $i++)
+//   {
+//   echo $devNames[i] . " is on this project.<br>";
+//   }
 
-echo "<br><br>"
+//echo "<br><br>"
 
 for ($i=0; $i<=5; $i++)
   {
