@@ -16,7 +16,7 @@ for ($i=0; $i<=count($devNames); $i++)
 
 echo "<br><br>"
 
-for ($i=0; $i<=count($devNames); $i++)
+for ($i=0; $i<=5; $i++)
   {
   echo "A number: " . $i . "<br>";
   }
