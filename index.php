@@ -25,21 +25,12 @@
     echo "Hello World<br><br>";
 
     while ($row = pg_fetch_row($result)) {
-        echo "name: $row[0]  E-mail: NA";
+        echo "Name: $row[0] ";
+        echo "Office: $row[1] ";
+        echo "Email: $row[2] ";
         echo "<br><br>\n";
     }
 
-    // $devNames = array("Aubrey", "June", "PamO");
-
-    // foreach ($devNames as $name)
-    // {
-    // 	echo $name . "is on this project.<br>" ;
-    // }
-
-    for ($i=0; $i<=5; $i++)
-    {
-      echo "A number: " . $i . "<br>";
-    }
 ?>
 
 
