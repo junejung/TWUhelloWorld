@@ -10,10 +10,22 @@
     <link rel="stylesheet" href="css/main.css">
     </head>
 <body>
+<?php
+    function pg_connection_string() {
+
+    }
+    // Establish db connection
+    $db = pg_connect(pg_connection_string());
+    if (!$db) {
+        echo "Database connection error.";
+        exit;
+    }
+
+    $result = pg_query($db, "SELECT * FROM Teammate");
+?>
 
 <?php 
 echo "Hello World<br><br>";
-
 
 $devNames = array("Aubrey", "June", "PamO");
 
