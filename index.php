@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     </head>
-<body>
+<body>  
 <?php
     function pg_connection_string() {
-    return    "dbname=d8qeg4q6li1ina host=ec2-54-227-252-82.compute-1.amazonaws.com port=5432 user=mcrzmgmejvucwy password=q0rdRrH5_9zVAzttDbNRcK4Sqr sslmode=require";
+    return    "dbname=".$_SERVER["db_name"].
+                " host=" . $_SERVER["host"] . 
+                " port=" . $_SERVER["port"] . 
+                " user=" . $_SERVER["user"] . 
+                " password=" . $_SERVER["password"] . 
+                " sslmode=require";
     }
     // Establish db connection
     $db = pg_connect(pg_connection_string());
