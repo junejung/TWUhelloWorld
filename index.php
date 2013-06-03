@@ -31,6 +31,8 @@
         echo "<br>\n";
     }
 
+    echo "<a href='new_record.php'>Add another record.</a>";
+
 ?>
 
 
