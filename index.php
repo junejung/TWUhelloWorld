@@ -12,7 +12,7 @@
 <body>  
 <?php
     function pg_connection_string() {
-    return    "dbname=".$_SERVER["db_name"].
+    return    "dbname=". $_SERVER["db_name"].
                 " host=" . $_SERVER["host"] . 
                 " port=" . $_SERVER["port"] . 
                 " user=" . $_SERVER["user"] . 
@@ -20,6 +20,7 @@
                 " sslmode=require";
     }
     // Establish db connection
+    echo pg_connection_string();
     $db = pg_connect(pg_connection_string());
     if (!$db) {
         echo "Database connection error.";
