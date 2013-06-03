@@ -12,14 +12,13 @@
 <body>
 <?php
     function pg_connection_string() {
-
+    return    "dbname=d8qeg4q6li1ina host=ec2-54-227-252-82.compute-1.amazonaws.com port=5432 user=mcrzmgmejvucwy password=q0rdRrH5_9zVAzttDbNRcK4Sqr sslmode=require";
     }
     // Establish db connection
     $db = pg_connect(pg_connection_string());
     if (!$db) {
         echo "Database connection error.";
-        exit;
-    }
+        exit; }
 
     $result = pg_query($db, "SELECT * FROM Teammate");
 ?>
