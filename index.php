@@ -22,7 +22,14 @@
 
     $result = pg_query($db, "SELECT * FROM teammate");
 
-    echo "Hello World<br><br>";
+ 
+
+    if (!empty($_POST)) {
+        echo "New User added, please refresh the page";
+        pg_query($db, "INSERT INTO teammate (name, office, email) VALUES ('$_POST[name]', '$_POST[office]', '$_POST[email]')");
+    }
+
+
 
     while ($row = pg_fetch_row($result)) {
         echo "<b>Name</b>: $row[0], ";
