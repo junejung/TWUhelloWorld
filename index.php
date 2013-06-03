@@ -4,11 +4,21 @@
 
 
 <?php 
-echo "Hello World";
+echo "Hello World<br><br>";
 
-for ($i=1; $i<=5; $i++)
+
+$devNames = array("Aubrey", "June", "PamO");
+
+for ($i=0; $i<=count($devNames); $i++)
   {
-  echo "That number is " . $i . "<br>";
+  echo $devNames[i] . " is on this project.<br>";
+  }
+
+echo "<br><br>"
+
+for ($i=0; $i<=count($devNames); $i++)
+  {
+  echo "A number: " . $i . "<br>";
   }
 ?>
 
