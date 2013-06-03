@@ -20,23 +20,26 @@
         echo "Database connection error.";
         exit; }
 
-    $result = pg_query($db, "SELECT * FROM Teammate");
-?>
+    $result = pg_query($db, "SELECT * FROM teammate");
 
-<?php 
-echo "Hello World<br><br>";
+    echo "Hello World<br><br>";
 
-$devNames = array("Aubrey", "June", "PamO");
+    while ($row = pg_fetch_row($result)) {
+        echo "name: $row[0]  E-mail: NA";
+        echo "<br><br>\n";
+    }
 
-foreach ($devNames as $name)
-{
-	echo $name . "is on this project.<br>" ;
-}
+    // $devNames = array("Aubrey", "June", "PamO");
 
-for ($i=0; $i<=5; $i++)
-  {
-  echo "A number: " . $i . "<br>";
-  }
+    // foreach ($devNames as $name)
+    // {
+    // 	echo $name . "is on this project.<br>" ;
+    // }
+
+    for ($i=0; $i<=5; $i++)
+    {
+      echo "A number: " . $i . "<br>";
+    }
 ?>
 
 
