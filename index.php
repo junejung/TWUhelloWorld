@@ -25,10 +25,10 @@
     echo "Hello World<br><br>";
 
     while ($row = pg_fetch_row($result)) {
-        echo "Name: $row[0] ";
-        echo "Office: $row[1] ";
-        echo "Email: $row[2] ";
-        echo "<br><br>\n";
+        echo "<b>Name</b>: $row[0], ";
+        echo "<b>Office</b>: $row[1], ";
+        echo "<b>Email</b>: $row[2] ";
+        echo "<br>\n";
     }
 
 ?>
