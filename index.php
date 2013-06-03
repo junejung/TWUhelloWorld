@@ -9,14 +9,19 @@ echo "Hello World<br><br>";
 
 $devNames = array("Aubrey", "June", "PamO");
 
-for ($i=0; $i<=count($devNames); $i++)
-  {
-  echo $devNames[i] . " is on this project.<br>";
-  }
+foreach ($devNames as $name) \
+{
+	echo .$name
+}
 
-echo "<br><br>"
+// for ($i=0; $i<=count($devNames); $i++)
+//   {
+//   echo $devNames[i] . " is on this project.<br>";
+//   }
 
-for ($i=0; $i<=count($devNames); $i++)
+//echo "<br><br>"
+
+for ($i=0; $i<=5; $i++)
   {
   echo "A number: " . $i . "<br>";
   }
