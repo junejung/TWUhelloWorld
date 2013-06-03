@@ -7,7 +7,12 @@
 echo "Hello World<br><br>";
 
 
-// $devNames = array("Aubrey", "June", "PamO");
+$devNames = array("Aubrey", "June", "PamO");
+
+foreach ($devNames as $name) \
+{
+	echo .$name
+}
 
 // for ($i=0; $i<=count($devNames); $i++)
 //   {
